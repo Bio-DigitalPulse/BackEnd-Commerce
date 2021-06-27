@@ -28,8 +28,7 @@ router.get('/', async (req, res) => {
 
 // get one product
 router.get('/:id', async (req, res) => {
-  // find a single product by its `id`
-  // be sure to include its associated Category and Tag data
+
   try {
     const data = await Product.findByPk(req.params.id, {
       include: [{
@@ -40,7 +39,7 @@ router.get('/:id', async (req, res) => {
     });
     if (!data) {
       res.status(404).json({
-        message: "No products found using that id."
+        message: "No products found matching that ID."
       });
       return;
     }
@@ -145,7 +144,7 @@ router.delete('/:id', async (req, res) => {
     });
     if (!data) {
       res.status(400).json({
-        message: "Product id was not found, nothing has been deleted."
+        message: "Product ID not found. Delete request canceled."
       })
       return;
     }

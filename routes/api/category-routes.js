@@ -34,7 +34,7 @@ router.get("/:id", async (req, res) => {
       res
         .status(404)
         .json({
-          message: "There's no categories under the given id."
+          message: "Category ID not located. Cannot complete find request."
         });
     }
     res.status(200).json(data);
@@ -66,7 +66,7 @@ router.put("/:id", async (req, res) => {
     });
     if (!data) {
       res.status(404).json({
-        message: "Category id is not found, no action was taken."
+        message: "Category ID not located. Cannot complete update request."
       });
       return;
     }
@@ -86,7 +86,7 @@ router.delete("/:id", async (req, res) => {
     });
     if (!data) {
       res.status(404).json({
-        message: "Category id not found. Nothing was deleted."
+        message: "Category ID not located. Cannot complete delete request."
       });
       return;
     }

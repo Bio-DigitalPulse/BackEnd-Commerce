@@ -35,7 +35,7 @@ router.get("/:id", async (req, res) => {
       res
         .status(404)
         .json({
-          message: "There are no tags under the provided id."
+          message: "No tags have been assigned the provided ID."
         });
       return;
     }
@@ -70,7 +70,7 @@ router.put("/:id", async (req, res) => {
       res
         .status(404)
         .json({
-          message: "Tag id was not found, no action was taken."
+          message: "Tag ID not located. Update request canceled."
         });
       return;
     }
@@ -94,7 +94,7 @@ router.delete("/:id", async (req, res) => {
       res
         .status(404)
         .json({
-          message: "Tag id was not found. no action was taken to delete.",
+          message: "Tag ID not located. Delete request canceled.",
         });
       return;
     }
