@@ -18,3 +18,4 @@ Visit the repository this code is stored:
 https://github.com/Bio-DigitalPulse/BackEnd-Commerce.git
 
 View a video demonstrating the functionality of this application:
+https://www.awesomescreenshot.com/video/4275637?key=637c6377ba18655af698af07097c6e02
