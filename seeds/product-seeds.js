@@ -2,7 +2,7 @@ const {
   Product
 } = require('../models');
 
-const productData = [{
+const productData = [{    //Product seeds corollating to corresponding category/tag identification
     product_name: 'Plain T-Shirt',
     price: 14.99,
     stock: 14,

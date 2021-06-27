@@ -2,7 +2,7 @@ const {
   Category
 } = require('../models');
 
-const categoryData = [{
+const categoryData = [{   //Category seeds to populate database
     category_name: 'Shirts',
   },
   {

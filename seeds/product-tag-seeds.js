@@ -2,7 +2,7 @@ const {
   ProductTag
 } = require('../models');
 
-const productTagData = [{
+const productTagData = [{   //Product tag id seed data binding to product identification
     product_id: 1,
     tag_id: 6,
   },

@@ -2,7 +2,7 @@ const {
   Tag
 } = require('../models');
 
-const tagData = [{
+const tagData = [{    //Product tag names array corrolating with their applicable categories/products
     tag_name: 'rock music',
   },
   {
